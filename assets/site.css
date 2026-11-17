@@ -280,3 +280,27 @@ footer{padding:56px 0 32px}.foot-logo{width:116px}.foot nav{gap:20px}
 .moments .galeria img{flex:none;min-width:0;max-width:none;width:calc((100% - 48px) / 3.4);height:auto}
 @media(max-width:760px){.moments .galeria img{width:80%}}
 .experience.section{padding:88px 0}@media(max-width:760px){.experience.section{padding:64px 0}}
+
+/* social links: words on desktop, icons on phones */
+.nav .soc{display:inline-flex;align-items:center}
+.nav .soc .ico{display:none;width:20px;height:20px}
+@media(max-width:760px){
+.nav{align-items:center}
+.nav .soc{padding:8px 2px;border-bottom:0}
+.nav .soc .txt{display:none}
+.nav .soc .ico{display:block}
+.home .nav .soc .ico{filter:drop-shadow(0 1px 6px rgba(0,0,0,.3))}
+}
+@media(max-width:420px){.nav{gap:12px}}
+@media(max-width:340px){.nav{gap:9px}.nav .soc .ico{width:18px;height:18px}}
+
+/* thank-you page */
+.thanks{min-height:calc(100svh - 320px);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:96px 0}
+.thanks-mark{width:52px;height:auto;margin-bottom:24px}
+.thanks h1{font-size:clamp(48px,7vw,84px);line-height:1;margin-bottom:24px}
+.thanks .sub{max-width:44ch;margin:0 auto 10px}
+.thanks .sign{margin-top:18px}
+.thanks-actions{display:flex;gap:14px;align-items:center;justify-content:center;margin-top:40px;flex-wrap:wrap}
+.ghost-link{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 26px;border:1px solid #cdb7a6;border-radius:var(--r);font:500 13px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;text-decoration:none;color:var(--ink)}
+.ghost-link:hover{background:var(--sand)}
+@media(max-width:760px){.thanks{padding:64px 0;min-height:calc(100svh - 300px)}.thanks h1{font-size:46px}.thanks-actions{flex-direction:column;width:100%;gap:10px;margin-top:32px}.thanks-actions a{width:100%;min-height:50px}}
