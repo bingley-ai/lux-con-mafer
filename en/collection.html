@@ -61,4 +61,10 @@
   <nav aria-label="Footer"><a href="/en/">Home</a><a href="https://www.instagram.com/amuru.wellness/" target="_blank" rel="noopener noreferrer">Instagram</a><a href="https://www.tiktok.com/@mafervasquezz" target="_blank" rel="noopener noreferrer">TikTok</a></nav>
   <p class="legal">© 2026 AMURU · Yoga &amp; Movement with Mafer Vásquez · Honduras</p>
 </div></footer>
+<script>
+document.querySelectorAll('form[action*="docs.google.com/forms"]').forEach(f=>f.addEventListener('submit',e=>{
+  e.preventDefault();const btn=f.querySelector('button');if(btn){btn.disabled=true;}
+  fetch(f.action,{method:'POST',mode:'no-cors',body:new URLSearchParams(new FormData(f))}).then(()=>{location.href='/en/thanks.html';}).catch(()=>{f.submit();});
+}));
+</script>
 </body></html>
