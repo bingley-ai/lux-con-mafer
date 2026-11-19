@@ -311,10 +311,16 @@ footer{padding:56px 0 32px}.foot-logo{width:116px}.foot nav{gap:20px}
 .nav .soc:hover{color:var(--copper)}
 @media(min-width:761px){.nav{align-items:center;gap:26px}}
 
-/* desktop hero: fit heading, text, form and photo in the first screen */
+/* desktop: hero plus the welcome heading both show on the first screen */
 @media(min-width:761px){
-.hero{min-height:calc(100svh - 77px);padding:36px 0 44px;align-content:center}
-.hero-photo img{height:min(46vw,620px,calc(100svh - 77px - 80px));min-height:360px}
-.hero h1{font-size:clamp(56px,min(7.4vw,11.5svh),104px)}
+.hero{min-height:0;padding:32px 0 20px}
+.hero-photo img{height:min(46vw,580px,calc(100svh - 77px - 52px - 190px));min-height:330px}
+.hero h1{font-size:clamp(56px,min(7.4vw,10.5svh),104px)}
 .lede{margin-bottom:28px}
+.intro.section{padding-top:44px}
+.intro .mark{display:none}
+.intro .eyebrow{margin-bottom:14px}
+.intro h2{max-width:none;font-size:clamp(34px,3.1vw,46px)}
+.intro.section{padding-top:36px}
 }
+@media(min-width:1180px){.intro h2{white-space:nowrap}}
